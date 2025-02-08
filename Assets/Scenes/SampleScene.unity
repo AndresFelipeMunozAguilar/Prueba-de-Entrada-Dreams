@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -555,8 +555,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -305.62}
-  m_SizeDelta: {x: 346.199, y: 30.0777}
+  m_AnchoredPosition: {x: 0, y: -357.9}
+  m_SizeDelta: {x: 625.4829, y: 30.0777}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &524225779
 MonoBehaviour:
@@ -580,11 +580,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 74
+    m_MaxSize: 118
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1091,6 +1091,7 @@ GameObject:
   - component: {fileID: 1556071539}
   - component: {fileID: 1556071538}
   - component: {fileID: 1556071537}
+  - component: {fileID: 1556071540}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -1116,7 +1117,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -80.1}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 161, y: 38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556071537
 MonoBehaviour:
@@ -1200,6 +1201,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556071535}
   m_CullTransparentMesh: 1
+--- !u!114 &1556071540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556071535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9878e4edb2560004b9d958bde103f36a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myButton: {fileID: 1556071537}
+  InputFieldArray: {fileID: 2105104759}
+  InputFieldOffset: {fileID: 1880250071}
+  displayText: {fileID: 524225779}
 --- !u!1 &1880250069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,7 +1230,7 @@ GameObject:
   - component: {fileID: 1880250072}
   - component: {fileID: 1880250071}
   m_Layer: 5
-  m_Name: InputField (Legacy) (1)
+  m_Name: InputFieldForOffset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1238,7 +1255,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -25.1}
-  m_SizeDelta: {x: 244.44, y: 30}
+  m_SizeDelta: {x: 361.2, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1880250071
 MonoBehaviour:
@@ -1438,7 +1455,7 @@ GameObject:
   - component: {fileID: 2105104760}
   - component: {fileID: 2105104759}
   m_Layer: 5
-  m_Name: InputField (Legacy)
+  m_Name: InputFieldForArray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1463,7 +1480,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 31.8}
-  m_SizeDelta: {x: 244.44, y: 30}
+  m_SizeDelta: {x: 361.2, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2105104759
 MonoBehaviour:
