@@ -6,15 +6,16 @@ public class Point4Code : MonoBehaviour
     // Declarar una matriz de ejemplo
     public int[,] matrix = {
         {1, 2, 3, 4},
-        {5,6,7,8},
-        {9,10,11,12},
-        {13,14,15,16}
+        {5, 6, 7, 8},
+        {9, 10, 11, 12},
+        {13, 14, 15, 16}
     };
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Start se llama una vez antes de la primera ejecución de Update después de que se crea el MonoBehaviour
     void Start()
     {
         Debug.Log("==================== Punto 4 ====================\n");
+        // Obtener el arreglo en espiral y convertirlo a una cadena para imprimir
         int[] spiralArray = GetSpiralArray(matrix);
         string result = string.Join(", ", spiralArray);
         Debug.Log(result);
